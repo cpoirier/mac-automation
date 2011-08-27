@@ -1,6 +1,6 @@
 # [Alfred](http://alfredapp.com/) Extensions (right-click to download)
 
-* [Play all of current album](https://github.com/cpoirier/tools/raw/master/itunes/Play%20all%20of%20current%20album.alfredextension).
+* [Play all of current album](https://github.com/cpoirier/tools/raw/master/itunes/Play%20all%20of%20current%20album.alfredextension)
 
     Adds the album of the current track to iTunes DJ. Default keyword is "album".
   
