@@ -52,8 +52,9 @@ tell application "iTunes"
 	-- Add all tracks from the album to iTunes DJ
 	
 	set theAlbum to album of theTrack as string
-	set theTracks to (file tracks of library playlist 1 whose album is theAlbum)
-	if track number of theTrack is 1 then
+	set theArtist to album artist of theTrack as string
+	set theTracks to (file tracks of library playlist 1 whose album is theAlbum and album artist is theArtist)
+	if track number of theTrack is track number of item 1 of theTracks then
 		set theTracks to rest of theTracks
 	end if
 	repeat with currentTrack in theTracks
