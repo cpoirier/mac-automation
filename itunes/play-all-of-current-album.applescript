@@ -33,13 +33,13 @@
 tell application "iTunes"
 	
 	activate
+	set oldPlaylist to (current playlist)
+	set isWindowVisible to (visible of browser window 1)
 	set theTrack to (current track)
 	set theTime to (player position)
-	set isWindowVisible to (visible of browser window 1)
 	
 	-- Make sure the track is running in iTunes DJ
 	
-	set oldPlaylist to (current playlist)
 	play playlist "iTunes DJ"
 	delete (every track of playlist "iTunes DJ" whose index > (get index of current track))
 	if name of oldPlaylist is not "iTunes DJ" then
