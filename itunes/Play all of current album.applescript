@@ -61,7 +61,9 @@ tell application "iTunes"
 		set theTracks to rest of theTracks
 	end if
 	repeat with currentTrack in theTracks
-		duplicate currentTrack to playlist "iTunes DJ"
+		try
+			duplicate currentTrack to playlist "iTunes DJ"
+		end try
 	end repeat
 end tell
 
